@@ -1,0 +1,204 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#F8FAFC;
+color:#1E293B;
+padding:20px;
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:bold;
+color:#0F766E;
+}
+
+.navbar nav a{
+margin-left:15px;
+text-decoration:none;
+color:#334155;
+font-size:14px;
+}
+
+.navbar nav a:hover{
+color:#0F766E;
+}
+
+/* HERO */
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#0F766E;
+color:white;
+padding:40px;
+border-radius:20px;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.hero-text h1{
+font-size:2.8rem;
+line-height:1.2;
+}
+
+.tagline{
+margin-top:10px;
+opacity:0.9;
+}
+
+/* SEARCH */
+.search-box{
+margin-top:15px;
+}
+
+.search-box input{
+padding:12px;
+width:250px;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+/* HERO IMAGE */
+.hero-img img{
+width:250px;
+border-radius:12px;
+}
+
+/* STATS */
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+margin:25px 0;
+}
+
+.stat-card{
+background:white;
+padding:20px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card h2{
+color:#0F766E;
+}
+
+/* BOOK GRID */
+.books{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+@media(max-width:1100px){
+.books{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+.books{grid-template-columns:1fr;}
+}
+
+/* BOOK CARD */
+.book-card{
+background:white;
+padding:15px;
+border-radius:14px;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+.img-box{
+width:100%;
+height:300px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#F1F5F9;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.img-box img{
+max-width:100%;
+max-height:100%;
+object-fit:contain;
+}
+
+/* STATUS */
+.status{
+display:inline-block;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+margin:8px 0;
+font-weight:600;
+}
+
+.reading{
+background:#CCFBF1;
+color:#0F766E;
+}
+
+.completed{
+background:#DCFCE7;
+color:#15803D;
+}
+
+.wishlist{
+background:#E0F2FE;
+color:#0369A1;
+}
+
+/* PROGRESS BAR (IMPORTANT FIX BACK) */
+.progress-bar{
+width:100%;
+height:10px;
+background:#E2E8F0;
+border-radius:10px;
+overflow:hidden;
+margin:10px 0;
+}
+
+.progress{
+height:100%;
+background:#14B8A6;
+}
+
+/* FAVORITES */
+.favorites{
+margin-top:30px;
+background:white;
+padding:20px;
+border-radius:12px;
+}
+
+.favorites h2{
+color:#0F766E;
+margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+margin-top:30px;
+padding:20px;
+color:#64748B;
+}
